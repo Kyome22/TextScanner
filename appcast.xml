@@ -3,6 +3,14 @@
     <channel>
         <title>TextScanner</title>
         <item>
+            <title>1.1</title>
+            <pubDate>Wed, 05 Feb 2025 23:46:30 +0900</pubDate>
+            <sparkle:version>1.1.0</sparkle:version>
+            <sparkle:shortVersionString>1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/Kyome22/TextScanner/releases/download/1.1.0/Installer.dmg" length="1692120" type="application/octet-stream" sparkle:edSignature="tRNt5XERKMuah0zoedcXTkhShGcXtawY+VkDE8mnIxtpBYT4hG05fNvLRNuquyY1xIJ/QqonO7DpD4y31j6uCA=="/>
+        </item>
+        <item>
             <title>1.0</title>
             <pubDate>Thu, 23 Jan 2025 22:47:20 +0900</pubDate>
             <sparkle:version>1.0.0</sparkle:version>
