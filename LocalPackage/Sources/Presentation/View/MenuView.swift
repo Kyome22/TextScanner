@@ -8,10 +8,9 @@ struct MenuView: View {
     init(
         nsAppClient: NSAppClient,
         windowSceneMessengerClient: WindowSceneMessengerClient,
-        logService: LogService,
         updateService: UpdateService
     ) {
-        viewModel = .init(nsAppClient, windowSceneMessengerClient, logService, updateService)
+        viewModel = .init(nsAppClient, windowSceneMessengerClient, updateService)
     }
 
     var body: some View {
@@ -41,12 +40,6 @@ struct MenuView: View {
                 Text("terminateApp", bundle: .module)
             }
         }
-        .onAppear {
-            viewModel.onAppear(screenName: String(describing: Self.self))
-        }
-        .onDisappear {
-            viewModel.onDisappear()
-        }
     }
 }
 
@@ -54,7 +47,6 @@ struct MenuView: View {
     MenuView(
         nsAppClient: .testValue,
         windowSceneMessengerClient: .testValue,
-        logService: .init(.testValue),
         updateService: .init(.testValue)
     )
 }
